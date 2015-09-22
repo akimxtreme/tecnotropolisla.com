@@ -1,0 +1,40 @@
+#u75
+{
+	border-style: none;
+	border-color: transparent;
+	position: relative;
+	background: #000000 url("../images/6893284-gray-wallpaper.jpg") no-repeat right center;
+}
+
+#u77
+{
+	border-style: none;
+	border-color: transparent;
+	position: relative;
+	background: transparent url("../images/logo%20tecno%20blu.png") no-repeat center center;
+	background-size: cover !important;
+}
+
+#u77.MuseLinkActive
+{
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover !important;
+}
+
+#u144-4
+{
+	color: #FFFFFF;
+	font-size: 30px;
+	font-family: Geneva, Verdana, Lucida Sans, Lucida Sans Unicode, sans-serif;
+	position: relative;
+}
+
+#u76
+{
+	border-style: none;
+	border-color: transparent;
+	background-color: #7F7F7F;
+	position: relative;
+}
+

@@ -1,2 +1,2 @@
-# tecnotropolisla.com
-Sitio Web de la Corporación - John Pall
+# tecnotropolisLLC
+Website de Tecnotropolis LLS  sin el Sistema de Referencia de Móviles

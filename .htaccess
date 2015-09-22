@@ -1,0 +1,4 @@
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^troovami.tecnotropolisla.com [OR]
+RewriteCond %{HTTP_HOST} ^www.troovami.tecnotropolisla.com$
+RewriteRule ^(.*)$ http://www.tecnotropolisla.com/troovami/public [R=301,L]

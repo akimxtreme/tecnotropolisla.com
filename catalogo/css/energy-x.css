@@ -1,0 +1,193 @@
+html
+{
+	background-color: #7F7F7F;
+}
+
+#page
+{
+	z-index: 1;
+	width: 960px;
+	min-height: 1400px;
+	background-image: none;
+	border-style: none;
+	border-color: transparent;
+	background-color: #FFFFFF;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#page_position_content
+{
+	margin-bottom: 1px;
+}
+
+#u75
+{
+	z-index: 2;
+	width: 960px;
+	padding-bottom: 9px;
+}
+
+#u77
+{
+	z-index: 4;
+	width: 160px;
+	height: 131px;
+	margin-right: -10000px;
+	margin-top: 13px;
+	left: 27px;
+}
+
+#u77.MuseLinkActive
+{
+	margin: 13px -10000px 0px 0px;
+}
+
+#u144-4
+{
+	z-index: 5;
+	width: 451px;
+	min-height: 40px;
+	margin-right: -10000px;
+	margin-top: 62px;
+	left: 417px;
+}
+
+#u4779
+{
+	z-index: 9;
+	width: 920px;
+	height: 357px;
+	border-style: none;
+	border-color: transparent;
+	margin-left: 20px;
+	margin-top: 22px;
+	position: relative;
+	background: #FFFFFF url("../images/energy%20x%20plus%20banner-u4779-fr.jpg") no-repeat center center;
+	background-size: cover !important;
+}
+
+#u4810
+{
+	z-index: 10;
+	width: 920px;
+	border-style: none;
+	border-color: transparent;
+	padding-bottom: 169px;
+	margin-left: 20px;
+	position: relative;
+	background: #FFFFFF url("../images/energy%20data.jpg") no-repeat center center;
+	background-size: cover !important;
+}
+
+#u5000-4
+{
+	z-index: 17;
+	width: 47px;
+	min-height: 17px;
+	color: #FFFFFF;
+	position: relative;
+	margin-right: -10000px;
+	margin-top: 538px;
+	left: 446px;
+}
+
+#pu4999
+{
+	width: 0.01px;
+	margin-left: 20px;
+	top: -1px;
+	margin-bottom: -1px;
+	position: relative;
+}
+
+#u4999
+{
+	z-index: 11;
+	width: 262px;
+	position: relative;
+	margin-right: -10000px;
+}
+
+#u4997
+{
+	z-index: 12;
+	width: 262px;
+	border-style: none;
+	border-color: transparent;
+	background-color: #423B3B;
+	padding-bottom: 15px;
+	position: relative;
+	margin-right: -10000px;
+}
+
+#u4997:hover
+{
+	background-color: #050505;
+	margin: 0px -10000px 0px 0px;
+}
+
+#u4998-4
+{
+	z-index: 13;
+	width: 47px;
+	min-height: 17px;
+	color: #FFFFFF;
+	position: relative;
+	margin-right: -10000px;
+	margin-top: 15px;
+	left: 104px;
+}
+
+#u5002
+{
+	z-index: 21;
+	width: 658px;
+	position: relative;
+	margin-right: -10000px;
+	left: 262px;
+}
+
+#u4996
+{
+	z-index: 22;
+	width: 658px;
+	border-style: none;
+	border-color: transparent;
+	background-color: #7F7F7F;
+	padding-bottom: 14px;
+	position: relative;
+	margin-right: -10000px;
+}
+
+#u4996:hover
+{
+	background-color: #ADA6A6;
+	margin: 0px -10000px 0px 0px;
+}
+
+#u5001-4
+{
+	z-index: 23;
+	width: 47px;
+	min-height: 17px;
+	color: #FFFFFF;
+	position: relative;
+	margin-right: -10000px;
+	margin-top: 16px;
+	left: 299px;
+}
+
+#u76
+{
+	z-index: 3;
+	width: 960px;
+	height: 62px;
+	margin-top: 36px;
+}
+
+#page .verticalspacer
+{
+	clear: both;
+}
+

@@ -1,0 +1,43 @@
+/* Estilos Propios */
+
+.marcas-catalogo {
+    margin-bottom: 15px;
+}
+
+.marcas-catalogo div .btn {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+.marcas-catalogo div .img-thumbnail {
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom: 0px;
+}
+
+.marcas-catalogo div .img-thumbnail:hover {
+    background: #E6E6E6;
+    opacity: 1;
+}
+
+.marcas-catalogo > div {
+    margin-bottom: 10px; 
+}
+.slider-content div h2.color span {
+    color:#FFF;
+    text-shadow: 0 0 1px #000;
+}
+.slider-content div h2.color span strong { 
+    text-shadow: 0 0 0px #000;
+}
+.slider-content div h3.color span {
+    color:#FFF;
+    text-shadow: 0 0 1px #000;
+    font-weight:bold;
+}
+div.caption h3.text-center {
+    color: #EE3733;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
