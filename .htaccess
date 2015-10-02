@@ -1,4 +1,19 @@
-RewriteEngine on
-RewriteCond %{HTTP_HOST} ^troovami.tecnotropolisla.com [OR]
-RewriteCond %{HTTP_HOST} ^www.troovami.tecnotropolisla.com$
-RewriteRule ^(.*)$ http://www.tecnotropolisla.com/troovami/public [R=301,L]
+RewriteEngine On
+# Spanish
+	RewriteRule ^index index.php	
+	RewriteRule ^principal index.php
+
+	RewriteRule ^es/nosotros es/nosotros.php
+	RewriteRule ^es/productos es/productos.php
+	RewriteRule ^es/servicios es/servicios.php
+	RewriteRule ^es/especiales es/especiales.php
+	RewriteRule ^es/contacto es/contacto.php
+
+# English
+	
+	RewriteRule ^en/we en/nosotros.php
+	RewriteRule ^en/products en/productos.php
+	RewriteRule ^en/services en/servicios.php
+	RewriteRule ^en/specials en/especiales.php
+	RewriteRule ^en/contacts en/contacto.php
+

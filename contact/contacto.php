@@ -98,14 +98,14 @@ $mail = mail(ORDER_FORM, $subject, $message,
 
 */
     if($idioma =="es"){
-        echo '<html><head><meta http-equiv="REFRESH" content="0; url=../contacto.php?msn=success"></head></html>';
+        echo '<html><head><meta http-equiv="REFRESH" content="0; url=../es/contacto.php?msn=success"></head></html>';
     }else {
-        echo '<html><head><meta http-equiv="REFRESH" content="0; url=../contacto-en.php?msn=success"></head></html>';
+        echo '<html><head><meta http-equiv="REFRESH" content="0; url=../es/contacto-en.php?msn=success"></head></html>';
     }
     
 
 }else{
-	echo '<html><head><meta http-equiv="REFRESH" content="0; url=../contacto.php"></head></html>';
+	echo '<html><head><meta http-equiv="REFRESH" content="0; url=../es/contacto.php"></head></html>';
 }
 
 ?>

@@ -54,7 +54,8 @@
 	}
 	
 	.navbar-brand {
-		padding: 25px 15px;
+		/*padding: 25px 15px;*/
+		width: 50%;
 	}
 	
 	.navbar-default .navbar-nav {
