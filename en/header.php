@@ -5,7 +5,8 @@
 
 <head>
     <!--<base href="http://www.tecnotropolisla.com/">-->
-    <base href="http://127.0.0.1/corporacion/tecnotropolisla.com/">
+    <base href="http://192.168.1.109/corporacion/tecnotropolisla.com/">
+    
     <!-- Basic -->
     <title>Tecnotropolis LLC</title>
     <link rel="shortcut icon" href="images/icono.png" type="image"/>

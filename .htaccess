@@ -8,6 +8,17 @@ RewriteEngine On
 	RewriteRule ^es/servicios es/servicios.php
 	RewriteRule ^es/especiales es/especiales.php
 	RewriteRule ^es/contacto es/contacto.php
+	
+	RewriteRule ^es/moviles/?$ es/moviles.php
+	RewriteRule ^es/moviles/(\w+)$ es/moviles.php?movil=$1
+	RewriteRule ^es/moviles/(\w+)$ es/moviles.php?movil=$1
+
+	RewriteRule ^blu-phone/([a-zA-Z0-9\-]+)$ es/detalles-movil.php?movil=$1
+
+	RewriteRule ^blu-compare$ es/comparar.php
+
+
+	
 
 # English
 	

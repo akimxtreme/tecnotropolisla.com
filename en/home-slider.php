@@ -15,15 +15,27 @@
         <!-- Carousel inner -->
         <div class="carousel-inner">
             <div class="item active">
-                <img class="img-responsive" src="images/slider/blu/blu-banner-0.jpg" alt="slider">                
+                <img class="img-responsive" src="images/en/banner-index-ingles.jpg" alt="slider">                
             </div>
             <!--/ Carousel item end -->            
             <div class="item">
-            <img class="img-responsive" src="images/slider/blu/blu-banner-1.jpg" alt="slider">                        
+                <img class="img-responsive" src="images/en/banner-index-2-ingles.jpg" alt="slider">                        
             </div>
             <!--/ Carousel item end -->
             <div class="item">
-                        <img class="img-responsive" src="images/slider/blu/blu-banner-2.jpg" alt="slider">
+                <img class="img-responsive" src="images/en/banner-index-3-ingles.jpg" alt="slider">
+            </div>
+            <!--/ Carousel item end -->
+            <div class="item">
+                <img class="img-responsive" src="images/en/banner-index-4-ingles.jpg" alt="slider">
+            </div>
+            <!--/ Carousel item end -->
+            <div class="item">
+                <img class="img-responsive" src="images/en/banner-index-5-ingles.jpg" alt="slider">
+            </div>
+            <!--/ Carousel item end -->
+            <div class="item">
+                <img class="img-responsive" src="images/en/banner-index-6-ingles.jpg" alt="slider">
             </div>
             <!--/ Carousel item end -->
         </div>

@@ -11,7 +11,7 @@
                         </button>
                         <!-- End Toggle Nav Link For Mobiles -->
                         <a class="navbar-brand" href="es/">
-                            <img alt=""  src="images/logo-tecnotropolisla-banner.png">
+                            <img alt=""  src="images/logo-tecnotropolisla-banner-oct-2015.png">
                         </a>
                     </div>                
                     <div class="navbar-collapse collapse" style="margin-right:-30px;">                        
@@ -20,7 +20,8 @@
                             <li><a href="es/">Principal</a></li>                            
                             <li><a href="es/nosotros"> Nosotros</a></li>
                             <li><a href="es/productos"> Productos</a></li>  
-                            <li><a href="es/especiales"> Especiales</a></li>                          
+                            <li><a href="es/moviles"> Moviles</a></li>
+                            <li><a href="es/especiales"> Especiales</a></li>
                             <li><a href="es/servicios"> Servicios</a></li>                                                        
                             <li><a href="es/contacto">Contacto</a></li>
                             <li>

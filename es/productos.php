@@ -22,7 +22,7 @@ require_once('menu.php');
 				<div class="row">
 					<br>
 					<a href="catalogo" target="_blank"><img class="producto" style="width:50%;float:left;" src="images/catalogo.jpg" alt=""></a>
-					<a class="lightbox" data-lightbox-type="ajax" href="images/comparar.jpg"><img class="producto" style="width:50%;" src="images/comparar.jpg" alt=""></a>
+					<a class="lightbox" data-lightbox-type="ajax" href="images/comparar-equipos.jpg"><img class="producto" style="width:50%;" src="images/comparar-equipos.jpg" alt=""></a>
 				</div>
 				<div class="row">
                         <div class="blu">

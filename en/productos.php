@@ -21,12 +21,12 @@ require_once('menu.php');
 				<div class="page-content">				
 				<div class="row">
 					<br>
-					<a href="catalogo" target="_blank"><img class="producto" style="width:50%;float:left;" src="images/catalogo.jpg" alt=""></a>
-				    <a class="lightbox" data-lightbox-type="ajax" href="images/comparar.jpg"><img class="producto" style="width:50%;" src="images/comparar.jpg" alt=""></a>
+					<a href="catalogue" target="_blank"><img class="producto" style="width:50%;float:left;" src="images/en/catalogue.jpg" alt=""></a>
+				    <a class="lightbox" data-lightbox-type="ajax" href="images/en/compare-phones.jpg"><img class="producto" style="width:50%;" src="images/en/compare-phones.jpg" alt=""></a>
                 </div>
 				<div class="row">
                         <div class="blu">
-                               <p class="text-center"><img src="images/banner-blu-web-2.jpg" alt=""> </p>
+                               <p class="text-center"><img src="images/en/banner-blu-web-2.jpg" alt=""> </p>
                             </div>
                         <br>
                         <div class="our-clients">

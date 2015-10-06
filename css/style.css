@@ -1999,6 +1999,9 @@ ul.icons-list li i {
     -webkit-transition: all 0.2s ease-in-out;
     -o-transition: all 0.2s ease-in-out;
 }
+.nav-tabs > li > a.movil {
+	color: #FFF;
+}
 
 .nav-tabs > li > a i {
 	margin-right: 1px;
@@ -3944,7 +3947,8 @@ ul.post-meta li, ul.post-meta li a {
 /*------------------------------------------*/
 
 .sidebar {
-    margin-bottom: 30px;
+    /*margin-bottom: 30px;*/
+    margin-bottom: 0px;
 }
 
 .sidebar a {

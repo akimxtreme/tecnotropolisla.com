@@ -65,7 +65,7 @@ require_once('menu.php');
 					</div>
                     <div class="row">
                     	<div class="blu">
-                               <p class="text-center"><img src="images/banner-blu-web-2.jpg" alt=""> </p>
+                               <p class="text-center"><img src="images/en/banner-blu-web-2.jpg" alt=""> </p>
                             </div>
 						<br>
 						<div class="our-clients">

@@ -18,11 +18,14 @@ require_once('menu.php');
 		<!-- End Page Banner -->
 		
 		<div class="container">
-				<div class="page-content">				
+			<div class="page-content">				
 				<div class="row">
-					<a href="#"><img class="producto" style="width:100%;float:left;" src="images/slider/blu/blu-banner-3.jpg" alt=""></a>	</div>				
+					<a href="es/contacto"><img class="producto" style="width:100%;float:left;margin:10px auto;" src="images/slider/banner-especiales-a.jpg" alt=""></a>	
+					<a href="es/contacto"><img class="producto" style="width:100%;float:left;margin:10px auto;" src="images/slider/banner-especiales-b.jpg" alt=""></a>
+					<a href="es/contacto"><img class="producto" style="width:100%;float:left;margin:10px auto;" src="images/slider/banner-especiales-c.jpg" alt=""></a>
 				</div>
 			</div>
+		</div>
 <?php
 require_once('footer.php');
 require_once('footer-bottom.php');

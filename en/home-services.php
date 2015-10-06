@@ -5,7 +5,7 @@
         <div class="row">
             
                 <div class="col-md-6 col-md-offset-3">
-                    <p class="text-center"><img src="images/banner-blu-web-2.jpg" alt=""></p>
+                    <p class="text-center"><img src="images/en/banner-blu-web-2.jpg" alt=""></p>
                 </div>
             
         </div>

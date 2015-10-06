@@ -9,21 +9,36 @@
             <li data-target="#main-slide" data-slide-to="0" class="active"></li>
             <li data-target="#main-slide" data-slide-to="1"></li>
             <li data-target="#main-slide" data-slide-to="2"></li>
+            <li data-target="#main-slide" data-slide-to="3"></li>
+            <li data-target="#main-slide" data-slide-to="4"></li>
+            <li data-target="#main-slide" data-slide-to="5"></li>            
         </ol>
         <!--/ Indicators end-->
 
         <!-- Carousel inner -->
         <div class="carousel-inner">
             <div class="item active">
-                <img class="img-responsive" src="images/slider/blu/blu-banner-0.jpg" alt="slider">                
+                <img class="img-responsive" src="images/slider/banner-index.jpg" alt="slider">                
             </div>
             <!--/ Carousel item end -->            
             <div class="item">
-            <img class="img-responsive" src="images/slider/blu/blu-banner-1.jpg" alt="slider">                        
+                <img class="img-responsive" src="images/slider/banner-index-2.jpg" alt="slider">                        
             </div>
             <!--/ Carousel item end -->
             <div class="item">
-                        <img class="img-responsive" src="images/slider/blu/blu-banner-2.jpg" alt="slider">
+                <img class="img-responsive" src="images/slider/banner-index-3.jpg" alt="slider">
+            </div>
+            <!--/ Carousel item end -->
+            <div class="item">
+                <img class="img-responsive" src="images/slider/banner-index-4.jpg" alt="slider">
+            </div>
+            <!--/ Carousel item end -->
+            <div class="item">
+                <img class="img-responsive" src="images/slider/banner-index-5.jpg" alt="slider">
+            </div>
+            <!--/ Carousel item end -->
+            <div class="item">
+                <img class="img-responsive" src="images/slider/banner-index-6.jpg" alt="slider">
             </div>
             <!--/ Carousel item end -->
         </div>

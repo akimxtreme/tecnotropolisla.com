@@ -11,7 +11,7 @@
                         </button>
                         <!-- End Toggle Nav Link For Mobiles -->
                         <a class="navbar-brand" href="en/">
-                            <img alt=""  src="images/logo-tecnotropolisla-banner.png">
+                            <img alt=""  src="images/logo-tecnotropolisla-banner-oct-2015.png">
                         </a>
                     </div>                
                     <div class="navbar-collapse collapse" style="margin-right:-30px;">                        

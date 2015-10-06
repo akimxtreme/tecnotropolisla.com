@@ -9,7 +9,7 @@
                     <div class="col-md-6 col-md-offset-3">
                         <div class="footer-widget contact-widget">
                             
-                            <img class="text-center col-lg-4 col-lg-offset-4 col-md-4 col-md-offset-4 " src="images/logo-tecnotropolila-footer.png" class="img-responsive" alt="Footer Logo" />
+                            <img class="text-center col-lg-4 col-lg-offset-4 col-md-4 col-md-offset-4 " src="images/logo-tecnotropolila-footer-oct-2015.png" class="img-responsive" alt="Footer Logo" />
                             
                             <ul class="col-lg-12 col-md-12 col-xs-12">
                                 <li><span>Facebook:</span> <a href="https://www.facebook.com/Tecnotropolis-LLC-751994258189169" target="_blank"><i class="fa fa-facebook-square"></i> Tecnotropolis LLC</a></li>
