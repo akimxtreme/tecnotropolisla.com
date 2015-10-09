@@ -69,7 +69,7 @@ echo '<script>
         }
     }
 </script>';
-echo '<span id="resultados" position:absolute;z-index:10;">';
+echo '<span id="resultados">';
 //echo '<div id="resultados" style="float:left;width:93.5%;background:#FFF;border:1px solid #666;padding:15px 5px 0px 5px;position:absolute;z-index:10;">';
 /*
     <table class="table table-hover">
@@ -204,9 +204,6 @@ function searchMovil($valor){
 // ************************************************************************************************** //
 function searchMovilURL($valor){   
     
-    //
-    //$sql = mysql_query("SELECT lng_idmodelo, str_modelo, str_friendly_url, blb_img_normal FROM tbl_modelos WHERE bol_eliminado=0 AND str_modelo like '%".$valor."%' LIMIT 4");
-    
     $sql = mysql_query(
                 "SELECT 
                                
@@ -231,8 +228,7 @@ function searchMovilURL($valor){
     $datos = [];
     while ($campo =  mysql_fetch_array($sql)){
         $a = base64_encode($campo[1]);  // IMG BLOB 
-                    //echo '<h4>'. $campo['serie_equipo'] .'</h4><br><hr>';
-                    //echo '<img src="data:image/jpeg;base64,'. $a .'" title="'. $campo[0] .'">';
+    
     echo'<div class="row">
         <div class="col-md-5">
             <div class="service-box service-center">
@@ -241,6 +237,15 @@ function searchMovilURL($valor){
                     <img src="data:image/jpeg;base64,'. $a .'" title="'. $campo[0] .'" alt="'. $campo[0] .'" title="'. $campo[0] .'">
                     </div>                                      
                 </div>
+                <div class="service-content">
+                    <div class="row">
+                        <form method="post" action="blu-compare" style="margin-top:5px;">
+                            <input type="hidden" name="movil" value="'. $valor .'">                            
+                            <button type="submit" class="btn btn-system"><i class="fa fa-retweet"></i> Comparar</button>
+                        </form>
+                    </div>
+                </div>
+
             </div>
         </div>
         <div class="col-md-7">
@@ -298,9 +303,11 @@ function searchMovilURL($valor){
             <!-- Nav Tabs -->
                 <ul class="nav nav-tabs">
                     <li class="active"><a href="#tab-1" data-toggle="tab"><i class="fa fa-edit"></i>Especificaciones</a></li>
-                    <li><a href="#tab-2" data-toggle="tab"><i class="fa fa-image"></i>Imágenes</a></li>
-                    <li><a href="blu-compare/'. $valor .'" ><i class="fa fa-retweet"></i>Comparar</a></li>
+                    <li><a href="#tab-2" data-toggle="tab"><i class="fa fa-image"></i>Imágenes</a></li>                    
                 </ul>
+
+
+
             <!-- Tab panels -->
             <div class="tab-content">
                 <!-- Tab Content 1 -->
@@ -360,16 +367,157 @@ function searchMovilURL($valor){
                         </div>
                     </div>
                     <!-- End Recent Projects Carousel -->
-                </div>
-                <!-- Tab Content 3 -->
-                <div class="tab-pane fade" id="tab-3">
-                    <p><strong>Lorem ipsum</strong> dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rational encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure.</p>
-                </div>
+                </div>                
             </div>
             <!-- End Tab Panels -->
         </div>
     </div>
-    ';
+    ';   
 }
+/* ##################################################################### */
+    /* Comparaciones */
+/* ##################################################################### */
+function espFriendlyURL($urlFriendly){    
+    $sql = mysql_query("SELECT lng_idmodelo FROM tbl_modelos WHERE str_friendly_url = '$urlFriendly'");    
+    $fila = mysql_fetch_row($sql);
+    $id = $fila[0];    
+    
+    $queryAllEspecificaciones = mysql_query(
+                "SELECT                                
+                esp.str_valor,              
+                title.str_especificacion  
+                FROM 
+                tbl_modelos_especificaciones as esp 
+                JOIN 
+                cat_especificaciones as title
+                ON 
+                esp.lng_idespecificacion = title.lng_idespecificacion 
+                WHERE 
+                esp.lng_idmodelo = '".$id."'
+                ");
+
+echo '<div class="col-md-12" style="margin-top:-25px;" id="especificaciones">';
+    echo'<div class="row">';
+        echo '<table class="table table-bordered table-striped">';            
+                while ($all =  mysql_fetch_array($queryAllEspecificaciones)){
+                   //echo'<tr><th class="text-right">'. $all['str_especificacion'] .'</th><td>'. $all['str_valor'] .'</td></tr>';
+                echo'<tr class="text-center">';
+                   echo '<th class="col-md-3 text-right" style="color:#666;">'. $all['str_especificacion'] .'</th>';
+                   echo '<td class="col-md-3">'. $all['str_valor'] .'</td>';
+                   echo '<td class="col-md-3"></td>';
+                   echo '<td class="col-md-3"></td>';
+                echo '</tr>';
+                }
+        echo '</table>';
+    echo '</div>';
+echo '</div>';
+    
+
+}
+function imgFriendlyURL($urlFriendly){
+    
+    $sql = mysql_query("SELECT str_modelo, blb_img_normal, lng_idmodelo FROM tbl_modelos WHERE str_friendly_url = '$urlFriendly'");    
+    $fila = mysql_fetch_row($sql);
+    
+    $img = base64_encode($fila[1]);  // IMG BLOB NORMAL
+     
+    echo '
+    <!-- Blu Phone 1 -->                        
+                            <div class="col-md-4 service-box service-center">
+                                <div class="panel panel-default">
+                                  <div class="panel-heading">
+                                    <h3 class="panel-title" style="margin: 10px auto">COMPARACION <i class="fa fa-retweet"></i>
+     1</h3>
+                                  </div>
+                                  <div class="panel-body">
+                                    <form action="#" style="margin:20px auto 80px auto;" onsubmit="return false">                           
+                                        <div class="input-group">                                   
+                                            <input name="movil-1" id="movil-1" type="text" autocomplete="off" class="form-control" onkeyup="compare(this.value,1);" maxlength="35" placeholder="Comparar con...">
+                                            <span class="input-group-btn">
+                                            <button class="btn btn-default" type="button" style="background:#ED163F;color:#FFF;"><i class="fa fa-search"></i></button>
+                                            </span>
+                                        </div><!-- /input-group -->
+                                        <span id="resultados-comparar-1">                                       
+                                        </span>
+                                    </form>
+                                    
+
+                                    <div class="service-boxed" style="border:1px solid #ccc;" id="img-comparar-1">
+                                        <div class="service-icon" style="margin-top:-50px;">
+                                            <img src="data:image/jpeg;base64,'. $img .'" alt="'. $fila[0] .'">
+                                            <input type="hidden" name="compare-1" id="compare-1" value="'. $fila[2] .'">
+                                        </div>
+                                        <div class="service-content">
+                                            <div class="row">
+                                                <h4>'. $fila[0] .'</h4>                                         
+                                            </div>
+                                        </div>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+    ';
+    
+
+}
+    /* ##################################################################### */
+    /* Query Slider */
+    /* ##################################################################### */
+    function sliderWeb($idioma){
+
+        $idioma = "blb_img_" . $idioma; // Ej: blb_img_es, blb_img_en
+        $sql = mysql_query("SELECT $idioma FROM tbl_slider WHERE bol_eliminado = 0 AND str_pagina = 'home' ORDER BY int_peso");        
+        echo '<!-- Start Home Page Slider -->';
+            echo '<section id="home">';
+            echo '<!-- Carousel -->';
+            echo '<div id="main-slide" class="carousel slide" data-ride="carousel">';
+                echo '<!-- Indicators -->';
+                echo '<ol class="carousel-indicators">';
+                /*
+                    $i = 0;
+                    while ($campo =  mysql_fetch_array($sql)){
+                        if($i == 0){
+                        echo '<li data-target="#main-slide" data-slide-to="'. $i .'" class="active"></li>';
+                        }else {
+                        echo '<li data-target="#main-slide" data-slide-to="'. $i .'"></li>';
+                        }
+                        $i++;
+                    }
+                */
+                    echo '</ol>';
+                    echo '<!--/ Indicators end-->';
+                    echo '<!-- Carousel inner -->';
+                    echo '<div class="carousel-inner">'; 
+                    
+                    $j = 0;                 
+                    while ($campo =  mysql_fetch_array($sql)){
+                        $a = base64_encode($campo[0]);  // IMG BLOB
+                            if($j == 0){
+                                echo '<div class="item active">';
+                                    echo '<img class="img-responsive" src="data:image/jpeg;base64,'. $a .'" alt="slider">';
+                                echo '</div>';
+                            }else {
+                                echo '<div class="item">';
+                                    echo '<img class="img-responsive" src="data:image/jpeg;base64,'. $a .'" alt="slider">';
+                                echo '</div>';
+                            }
+                            
+                            $j++;
+                    }
+
+                    echo '</div>';
+                    echo '<!-- Carousel inner end-->';                   
+                    echo '<!-- Controls -->';
+                    echo '<a class="left carousel-control" href="#main-slide" data-slide="prev">';
+                    echo '<span><i class="fa fa-angle-left"></i></span>';
+                    echo '</a>';
+                    echo '<a class="right carousel-control" href="#main-slide" data-slide="next">';
+                    echo '<span><i class="fa fa-angle-right"></i></span>';
+                    echo '</a>';
+            echo '</div>';
+            echo '<!-- /carousel -->';
+            echo '</section>';
+            echo '<!-- End Home Page Slider -->';
+
+    }
 ?>
